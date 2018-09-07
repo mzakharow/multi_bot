@@ -64,11 +64,8 @@ def echo_gigits(message: Message):
         bot.send_message(message.chat.id, weather.strip())
 
 
-    # if 'Hello' in message.text:
-    #     bot.reply_to(message, 'Hi!')
-    # else:
-    #     bot.reply_to(message, 'Good by')
-    # return
+    # Exception
+
 
 
 bot.polling(timeout=60)
