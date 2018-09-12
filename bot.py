@@ -71,7 +71,7 @@ def return_message(message: Message):
             event = data["data"]["events"][0]
 
             service_name = event.get('serviceName')
-            # print(service_name)
+
             if service_name == 'Track24':
                 bot.send_message(message.chat.id, 'Проблема в получении данных об отправлении, попробуйте позже.')
                 return
